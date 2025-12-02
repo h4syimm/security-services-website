@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="public/images/logo.png" width="200" alt="CV. Surya Agung Logo">
+    <img src="https://raw.githubusercontent.com/h4syimm/security-services-website/main/public/images/logo.png" width="200" alt="CV. Surya Agung Logo">
 </p>
 
 <h1 align="center">CV. Surya Agung</h1>

@@ -1,0 +1,511 @@
+/* Custom Styles */
+.hero-section {
+    position: relative;
+    color: white;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundSlideshow 25s infinite;
+    z-index: -2;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+@keyframes backgroundSlideshow {
+    0%, 16% { 
+        background-image: url('/images/main-bg-image/cctv-2596537_1920.jpg');
+    }
+    20%, 36% { 
+        background-image: url('/images/main-bg-image/valves-413713_1920.jpg');
+    }
+    40%, 56% { 
+        background-image: url('/images/main-bg-image/vecteezy_engineers-are-checking-the-operation-of-the-control-panel_8178305.jpg');
+    }
+    60%, 76% { 
+        background-image: url('/images/main-bg-image/vecteezy_lightning-rod-on-the-rooftop-of-condominium-with-cloudy-sky_2966507.jpg');
+    }
+    80%, 96% { 
+        background-image: url('/images/main-bg-image/ai-generated-8211245_1920.jpg');
+    }
+    100% { 
+        background-image: url('/images/main-bg-image/cctv-2596537_1920.jpg');
+    }
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* White Navbar Styling */
+.navbar {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #1F2937 !important;
+    text-decoration: none !important;
+    padding: 0;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #1F2937;
+    line-height: 1.1;
+    margin-bottom: 2px;
+}
+
+.company-subtitle {
+    font-size: 0.7rem;
+    color: #DC2626;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 1.1;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #1F2937 !important;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #DC2626 !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #1F2937;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2831, 41, 55, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* WhatsApp Contact Button */
+.btn-whatsapp {
+    background-color: #25D366;
+    border-color: #25D366;
+    color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp i {
+    font-size: 1.1em;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #DC2626, #3B4EBF);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 2rem 1.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.card-text {
+    color: #6B7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #DC2626;
+    border-color: #DC2626;
+}
+
+.btn-primary:hover {
+    background-color: #B91C1C;
+    border-color: #B91C1C;
+}
+
+.btn-blue {
+    background-color: #3B4EBF;
+    border-color: #3B4EBF;
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #2D3A8C;
+    border-color: #2D3A8C;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59, 78, 191, 0.3);
+}
+
+/* Services Section Styling */
+#services {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+#services h2 {
+    color: #1F2937;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#services h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #DC2626, #3B4EBF);
+    border-radius: 2px;
+}
+
+/* Icon styling for better visual appeal */
+.card i {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 1rem !important;
+    transition: all 0.3s ease;
+}
+
+.card:hover i {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline-primary {
+    color: #DC2626;
+    border-color: #DC2626;
+}
+
+.btn-outline-primary:hover {
+    background-color: #DC2626;
+    border-color: #DC2626;
+    color: white;
+}
+
+.text-primary {
+    color: #DC2626 !important;
+}
+
+.bg-primary {
+    background-color: #DC2626 !important;
+}
+
+.navbar-dark {
+    background-color: #1F2937 !important;
+}
+
+.bg-dark {
+    background-color: #1F2937 !important;
+}
+
+/* Service card icons with brand colors */
+.text-blue {
+    color: #3B4EBF !important;
+}
+
+.text-red {
+    color: #DC2626 !important;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(135deg, #1F2937 0%, #3B4EBF 100%);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section spacing */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 15px;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #DC2626, #3B4EBF);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.brand-card, .component-card, .feature-card, .type-card {
+    border: 1px solid #e3e6f0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.brand-card:hover, .component-card:hover, .feature-card:hover, .type-card:hover {
+    border-color: #3B4EBF;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59,78,191,0.1);
+}
+
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.modal-footer {
+    padding: 1.5rem 2rem;
+    border-top: 1px solid #e3e6f0;
+}
+
+.text-primary { color: #3B4EBF !important; }
+.text-danger { color: #DC2626 !important; }
+.text-warning { color: #F59E0B !important; }
+.text-info { color: #0EA5E9 !important; }
+.text-success { color: #10B981 !important; }
+
+/* Carousel improvements */
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #3B4EBF;
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #DC2626;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    transform: none;
+}
+
+.feature-highlight {
+    transition: all 0.3s ease;
+    border: 1px solid #e3e6f0;
+}
+
+.feature-highlight:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(59,78,191,0.15);
+    border-color: #3B4EBF;
+}
+
+/* Brand Logo Scrolling */
+.brand-scroll-container {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.brand-scroll-track {
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+    gap: 40px;
+    align-items: center;
+}
+
+.brand-logo {
+    flex-shrink: 0;
+    width: 140px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(59,78,191,0.2);
+    border-color: #3B4EBF;
+}
+
+.brand-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(0.3);
+    transition: filter 0.3s ease;
+}
+
+.brand-logo:hover img {
+    filter: grayscale(0);
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover */
+.brand-scroll-container:hover .brand-scroll-track {
+    animation-play-state: paused;
+}
+
+/* Footer Enhancements */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-item i {
+    width: 20px;
+    margin-top: 2px;
+}
+
+.service-link {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    background: rgba(255,193,7,0.2);
+    transform: translateX(5px);
+}
+
+.operating-hours {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.operating-hours > div {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 4px 0;
+}
+
+.operating-hours > div:last-child {
+    border-bottom: none;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+footer .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Social icons hover effect */
+footer .fs-4:hover {
+    color: #FFC107 !important;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}

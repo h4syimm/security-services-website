@@ -1,0 +1,14 @@
+<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Oval background -->
+  <ellipse cx="60" cy="40" rx="55" ry="35" fill="none" stroke="#DC2626" stroke-width="4"/>
+  <ellipse cx="60" cy="40" rx="50" ry="30" fill="white"/>
+  
+  <!-- SA Letters -->
+  <g transform="translate(20, 25)">
+    <!-- S Letter -->
+    <path d="M 5 5 L 25 5 L 25 12 L 12 12 L 12 18 L 25 18 L 25 30 L 5 30 L 5 23 L 18 23 L 18 17 L 5 17 Z" fill="#3B4EBF"/>
+    
+    <!-- A Letter -->
+    <path d="M 35 30 L 32 22 L 40 5 L 48 5 L 56 22 L 53 30 L 49 30 L 47 25 L 41 25 L 39 30 Z M 42 18 L 46 18 L 44 13 Z" fill="#3B4EBF"/>
+  </g>
+</svg>
